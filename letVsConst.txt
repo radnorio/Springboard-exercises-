@@ -1,0 +1,11 @@
+const PI = 3.14 will cause an error when changing the value of PI;
+
+1.) Var values can be redeclared multiple times while let only allows you to declare the value once.
+
+2.) var allows you to reasign and redeclare a value multiple times, but const will only let you declare
+one time, and you will not be able to reasign the value either.
+
+3.) let will allow you to reasign a value to an object while const will not
+
+4.) hoisting allows you to declare functions and variables before using them. When you call these functions in your code,
+you are hoisting their declarations to the top of the scope they are declared in.
