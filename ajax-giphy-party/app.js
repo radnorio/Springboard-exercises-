@@ -1,13 +1,18 @@
 console.log("Let's get this party started!");
 
 async function getGif(term){
-    const listGif = await axios.get(`http://api.giphy.com/v1/gifs/search`,{
+    listGif = await axios.get(`http://api.giphy.com/v1/gifs/search`,{
         params: {
             q: term,
             api_key: 'MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym'
         }
-    });
-    return listGif.data;
+     });
+    console.log(listGif.data);
+    // for(let gif of listGif.data.data){
+    //     console.log(gif.url);
+    //     return gif.bitly_gif_url;
+    // }
+    appendGifToPage(listGif.data.data[0].images.original.url);
 }
 function createGifDiv(gif){
     let div = document.createElement('div');
@@ -30,8 +35,6 @@ gifAdd.addEventListener('click',function(e){
     e.preventDefault;
     let inputP = document.getElementById('inputP');
     let term = inputP.value;
-    let gifURL = getGif(term);
-    console.log(term);
-    appendGifToPage(gifURL);
-})
+    getGif(term);
+});
 console.log('after data');
