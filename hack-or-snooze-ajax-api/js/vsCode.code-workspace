@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\solution4\\connect-four-solution"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "vsCode"
+	}
+}
