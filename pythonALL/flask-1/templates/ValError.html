@@ -1,0 +1,8 @@
+{% extends 'Currency.html'%}
+{% block ValError %}
+<div style="color: red;
+background-color: pink;
+background-image: url('https://i.imgur.com/GnyDvKN.png')">
+    Error: {{value}} is not a valid ammount; Please enter a positive integer.
+</div>
+{% endblock %}

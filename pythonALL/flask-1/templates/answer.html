@@ -1,0 +1,11 @@
+{% extends 'currency.html'%}
+{% block answer %}
+<form>
+    <br>
+    <div id = "answerIn">  The starting value is {{curr1Symbol}}{{value}}, and the conversion rate is {{rate}}. This makes the final converted sum: {{curr2Symbol}}{{conversion}}.</div>
+</form>
+<br>
+<form action="/">
+    <button>reset</button>
+</form>
+{% endblock %}

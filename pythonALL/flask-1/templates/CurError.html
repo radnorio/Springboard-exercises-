@@ -1,0 +1,14 @@
+{% extends 'currency.html'%}
+{% block CurError %}
+<div style = "color: red;
+background-color: pink;">
+    ERROR: {{CurrString}}
+</div>
+<br>
+{% if ValString != False%}
+    <div  style="color: red;
+    background-color: pink;">
+        ERROR: {{ValString}}
+    </div>
+{% endif %}
+{% endblock %}

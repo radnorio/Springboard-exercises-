@@ -1,0 +1,27 @@
+{% extends 'Home.html'%}
+{% block content %}
+<h1>Enter the currency conversion values</h1><br>
+<form action="/start/post" method="POST">
+    {% block CurError %}
+    {% endblock %}
+    {% block ValError%}
+    {% endblock %}
+    <p>
+        <label for="type1"> Enter the starting currency value here:  </label>
+        <input type="text" name="type1" id="type1">
+    </p>
+    <p>
+        <label for="type2"> Enter the currency you'd like to convert to here:  </label>
+        <input type="text" name="type2" id="type2">
+    </p>
+    <p>
+        <label for="valueIn"> Enter the ammount of the currency you're converting here:  </label>
+        <input type="text" name="valueIn" id="valueIn">
+    </p>
+
+    <button>Convert</button>
+    <br>
+    {% block answer %}
+    {% endblock %}
+</form>
+{% endblock %}
