@@ -7,6 +7,7 @@ $(function() {
     let { suit, value } = data.cards[0];
     console.log(`${value.toLowerCase()} of ${suit.toLowerCase()}`);
   }
+//pulls first card
 
   // 2.
   async function part2() {
@@ -18,6 +19,7 @@ $(function() {
       console.log(`${value.toLowerCase()} of ${suit.toLowerCase()}`);
     });
   }
+//pulls all cards in each data set
 
   // 3.
   async function setup() {
@@ -44,3 +46,5 @@ $(function() {
   }
   setup();
 });
+
+//create full deck using random generation

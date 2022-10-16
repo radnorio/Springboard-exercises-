@@ -6,7 +6,7 @@ async function part1() {
   let data = await $.getJSON(`${baseURL}/${favNumber}?json`);
   console.log(data);
 }
-part1();
+// gets data
 
 // 2.
 const favNumbers = [7, 11, 22];
@@ -15,8 +15,8 @@ async function part2() {
   console.log(data);
 }
 part2();
+//gets data in favNumbers
 
-// 3.
 async function part3() {
   let facts = await Promise.all(
     Array.from({ length: 4 }, () => $.getJSON(`${baseURL}/${favNumber}?json`))
@@ -26,3 +26,4 @@ async function part3() {
   });
 }
 part3();
+// Gets all data in 0-3 index
