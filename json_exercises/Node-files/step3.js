@@ -5,7 +5,7 @@ const axios = require('axios');
 
 //determines whether to write to the file file
 function Output(text, output) {
-    if (out) {
+    if (output) {
       fs.writeFile(output, text, 'utf8', function(err) {
         if (err) {
           console.error(`Couldn't write ${output}: ${err}`);
