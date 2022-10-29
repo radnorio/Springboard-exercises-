@@ -8,10 +8,11 @@ const app = express();
 const ExpressError = require("./expressError")
 const companiesRoutes = require("./routes/companies");
 const invoicesRoutes = require("./routes/invoices");
+const routes = require("./routes")
 
 app.use(express.json());
 
-
+app.use(routes);
 /** 404 handler */
 
 app.use(function(req, res, next) {
